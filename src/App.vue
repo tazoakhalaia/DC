@@ -1,20 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header />
+  <Wallpaper />
+  <FilmTickets />
+  <Video />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Header from './components/header.vue'
+import Wallpaper from './components/wallpaper.vue'
+import FilmTickets from './components/filmtichet.vue'
+import Video from './components/video.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Wallpaper,
+    FilmTickets,
+    Video
   }
 }
 </script>
 
-<style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
