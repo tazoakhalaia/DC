@@ -1,6 +1,6 @@
 <template>
 <header>
-    <img src="src/img/dclogo.png" class="dclogo">
+    <img src="../img/dclogo.png" class="dclogo">
     <div class="menu">
         <ul>
             <li><a href="#">Characters</a></li>

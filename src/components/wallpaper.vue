@@ -1,6 +1,6 @@
 <template>
     <div class="wallpaper">
-        <img src="src/assets/batmanwallpaper.jpg">
+        <img src="../img/batmanwallpaper.jpg">
         <div class="wallpaperinfo">
             <h2>WEEKEND ESCAPE</h2>
             <h2>JSA: BLACK REIGN</h2>

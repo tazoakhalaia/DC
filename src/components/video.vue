@@ -53,4 +53,8 @@ p{
     font-family: SnsCpt;
 }
 
+u{
+    cursor: pointer;
+}
+
 </style>
