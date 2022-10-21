@@ -1,34 +1,15 @@
 <template>
-  <Header />
-  <Wallpaper />
-  <FilmTickets />
-  <Video />
-  <Trailer />
-  <Toyshop />
-  <Slide />
-</template>
+  <div class="app">
+   <router-view />
+  </div>
+  </template>
 
 <script>
 
-import Header from './components/header.vue'
-import Wallpaper from './components/wallpaper.vue'
-import FilmTickets from './components/filmtichet.vue'
-import Video from './components/video.vue'
-import Trailer from './components/lasttrailer.vue'
-import Toyshop from './components/shoptoy.vue'
-import Slide from './components/slide.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    Header,
-    Wallpaper,
-    FilmTickets,
-    Video,
-    Trailer,
-    Toyshop,
-    Slide
-  }
+ 
 }
 </script>
 

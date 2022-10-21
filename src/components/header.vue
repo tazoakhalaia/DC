@@ -3,7 +3,7 @@
     <img src="../img/dclogo.png" class="dclogo">
     <div class="menu">
         <ul>
-            <li><a href="#">Characters</a></li>
+            <li><router-link to="/characters">Characters</router-link></li>
             <li><a href="#">Comics</a></li>
             <li><a href="#">Movies & TV</a></li>
             <li><a href="#">Games</a></li>
