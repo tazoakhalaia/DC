@@ -1,10 +1,10 @@
 <template>
     <div class="navback">
         <div class="navmiddle">
-            <div class="navmiddlepic" v-for="pic in pictures" :key="p">
+            <div class="navmiddlepic" v-for="(pic,p) in pictures" :key="p">
                 <img :src="pic">
-                <div class="text">
-                    <h1>asd</h1>
+                <div class="text" v-for="(item,index) in text" :key="index">
+                    <h1 v-if="p === index">{{item}}</h1>
                 </div>
             </div>
         </div>
@@ -13,16 +13,16 @@
 </template>
 
 <script>
-  import img from '../characterscomponents/charactersimg/community1.jpg'
-  import img2 from '../characterscomponents/charactersimg/community2.jpg'
-  import img3 from '../characterscomponents/charactersimg/community3.jpg'
-  import img4 from '../characterscomponents/charactersimg/community4.jpg'
+  import img from '../characterscomponents/charactersimg/digitalcomics.png'
+  import img2 from '../characterscomponents/charactersimg/merchendise.png'
+  import img3 from '../characterscomponents/charactersimg/print.png'
+  import img4 from '../characterscomponents/charactersimg/location.png'
 
   export default {
     data() {
         return {
             pictures: [img,img2,img3,img4],
-            text: ['text1','text2','text3','text4']
+            text: ['DIGITAL COMICS','DC Merchandise','Print Subscriptions','Comic Shop Locator'],
         }
     }
   }
@@ -33,6 +33,7 @@
 <style scoped>
 
 .navback {
+    width: 100%;
     margin-top: 30px;
     background-color: #0282F9;
     height: 150px;
@@ -49,14 +50,22 @@
 }
 
 .navmiddlepic {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
 }
 
 .navmiddlepic img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+}
+
+.text {
+    margin-left: 5px;
+    font-size: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 </style>

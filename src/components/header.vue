@@ -1,6 +1,6 @@
 <template>
 <header>
-    <img src="../img/dclogo.png" class="dclogo">
+    <router-link to="/"><img src="../img/dclogo.png" class="dclogo"></router-link>
     <div class="menu">
         <ul>
             <li><router-link to="/characters">Characters</router-link></li>
