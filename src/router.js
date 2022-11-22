@@ -8,6 +8,11 @@ const routes = [
         name: "Home",
         component: Home,
       },
+      {
+        path: "/vuejs-project",
+        name: "Home",
+        component: Home,
+      },
   {
     path: "/characters",
     name: "Characets",
